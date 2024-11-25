@@ -130,14 +130,13 @@
                     <div class="row mt-4 py-5">
                         <h1>วัดในภาคเหนือ</h1>
                         
-                        <!-- เพิ่มปุ่มควบคุม Auto Play -->
+
                         <div class="mb-3">
                             <button class="btn btn-primary" onclick="toggleAutoPlay()">
                                 สลับ Auto Play
                             </button>
                         </div>
 
-                        <!-- สร้าง Carousel -->
                         <div id="templeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
@@ -209,11 +208,7 @@
                                         </div>
                                     </div>
                                 </div>
-
-                                <!-- เพิ่ม Item 3 และ 4 ในรูปแบบเดียวกัน -->
                             </div>
-
-                            <!-- ปุ่มควบคุม -->
                             <button class="carousel-control-prev" type="button" data-bs-target="#templeCarousel" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon"></span>
                                 <span class="visually-hidden">Previous</span>
