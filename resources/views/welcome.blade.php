@@ -107,7 +107,7 @@
                                     <td>{{ $performance->created_at }}</td>
                                     <td>{{ $performance->updated_at }}</td>
                                     <td>
-                                        <a href="/edit-performance/{{ $performance->id }}" class="btn btn-primary">แก้ไข</a>
+                                        <a href="{{ route('performance.edit', $performance->id) }}" class="btn btn-primary">แก้ไข</a>
                                     </td>
                                     <td>
                                         <a href="/delete-performance/{{ $performance->id }}" 

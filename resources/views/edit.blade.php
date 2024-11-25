@@ -11,8 +11,9 @@
                 แก้ไขข้อมูล
             </div>
             <div class="card-body">
-                <form action="/update-performance/{{ $performance->id }}" method="POST">
+                <form action="{{ route('performance.update', $performance->id) }}" method="POST">
                     @csrf
+                    @method('PUT')
                     <div class="row">
                         <div class="col-md-4">
                             <select name="task_type" class="form-select" required>
