@@ -1,0 +1,54 @@
+#temple {
+    height: 100vh;
+    background-image: url('/img/เหนือ.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+#temple h1 {
+    
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    text-align: center;
+    color: red;
+    
+}
+.templeall {
+    color: black;
+    position: relative; 
+}
+.templeall p {
+    text-align: center;
+    width: 100%;
+    position: absolute;  
+    top: 50%;           
+    left: 50%;          
+    transform: translate(-50%, -50%); 
+    color: white;       
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);  
+}
+.card-body {
+    background-color: white;
+    width: 300px;
+    height: 100px;
+}
+
+#imagewatthai, .imagewatthai2 {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;  
+    object-position: center;  
+}
+
+
+.carousel-item {
+    transition: transform 0.6s ease-in-out;
+}
+
+
+.carousel-no-transition {
+    transition: none;
+}
+
+
