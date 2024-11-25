@@ -110,9 +110,11 @@
                                         <a href="{{ route('performance.edit', $performance->id) }}" class="btn btn-primary">แก้ไข</a>
                                     </td>
                                     <td>
-                                        <a href="/delete-performance/{{ $performance->id }}" 
-                                           class="btn btn-danger" 
-                                           onclick="return confirm('คุณต้องการลบข้อมูลนี้ใช่หรือไม่?')">ลบ</a>
+                                        <form action="{{ route('performance.destroy', $performance->id) }}" method="POST" style="display: inline;">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="btn btn-danger" onclick="return confirm('คุณต้องการลบข้อมูลนี้ใช่หรือไม่?')">ลบ</button>
+                                        </form>
                                     </td>
                                 </tr>
                             @endforeach
