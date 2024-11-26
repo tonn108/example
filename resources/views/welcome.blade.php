@@ -132,62 +132,56 @@
                         
 
                         <div class="mb-3">
-                            <button class="btn btn-primary" onclick="toggleAutoPlay()">
-                                สลับ Auto Play
+                            <button class="btn btn-primary" id="autoPlayBtn" onclick="toggleAutoPlay()">
+                                เปิด Auto Play
                             </button>
                         </div>
 
-                        <div id="templeCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                        <div id="templeCarousel" class="carousel slide">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <div class="row">
                                         <div class="col-md-3">
                                             <div class="templeall">
-                                                <img src="/img/เหนือ.webp" class="card-img-top imagewatthai2" id="imagewatthai" alt="รูปภาพ 1">
+                                                <img src="/img/wat1.jpg" class="card-img-top imagewatthai2" id="imagewatthai" alt="รูปภาพ 1">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">หัวข้อการ์ด 1</h5>
+                                                    <h5 class="card-title">วัดป่าดาราภิรมย์ </h5>
                                                     <p class="card-text">รายละเอียดสำหรับการ์ดที่ 1</p>
-                                                    <a href="#" class="btn btn-primary">ดูเพิ่มเติม</a>
+                                                    <h6 class="card-text">ที่ตั้ง :  ต.ริมใต้ อ.แม่ริม จ.เชียงใหม่ </h6>
+                                                    <a href="#" class="btn btn-primary btn-sm">ดูเพิ่มเติม</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="templeall">
-                                                <img src="/img/เหนือ.webp" class="card-img-top imagewatthai2" id="imagewatthai" alt="รูปภาพ 1">
+                                                <img src="/img/wat2.jpg" class="card-img-top imagewatthai2" id="imagewatthai" alt="รูปภาพ 1">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">หัวข้อการ์ด 1</h5>
+                                                    <h5 class="card-title">วัดโลกโมฬี</h5>
                                                     <p class="card-text">รายละเอียดสำหรับการ์ดที่ 1</p>
-                                                    <a href="#" class="btn btn-primary">ดูเพิ่มเติม</a>
+                                                    <h6 class="card-text">ที่ตั้ง :ตำบลศรีภูมิ อำเภอเมือง จังหวัดเชียงใหม่ </h6>
+                                                    <a href="#" class="btn btn-primary btn-sm">ดูเพิ่มเติม</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="templeall">
-                                                <img src="/img/เหนือ.webp" class="card-img-top imagewatthai2" id="imagewatthai" alt="รูปภาพ 1">
+                                                <img src="/img/wat3.jpg" class="card-img-top imagewatthai2" id="imagewatthai" alt="รูปภาพ 1">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">หัวข้อการ์ด 1</h5>
+                                                    <h5 class="card-title">วัดเจดีย์หลวง</h5>
                                                     <p class="card-text">รายละเอียดสำหรับการ์ดที่ 1</p>
-                                                    <a href="#" class="btn btn-primary">ดูเพิ่มเติม</a>
+                                                    <h6 class="card-text">ที่ตั้ง :ตำบลพระสิงห์ อำเภอเมือง จังหวัดเชียงใหม่ </h6>
+                                                    <a href="#" class="btn btn-primary btn-sm">ดูเพิ่มเติม</a>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-3">
                                             <div class="templeall">
-                                                <img src="/img/เหนือ.webp" class="card-img-top imagewatthai2" id="imagewatthai" alt="รูปภาพ 1">
+                                                <img src="/img/wat4.jpg" class="card-img-top imagewatthai2" id="imagewatthai" alt="รูปภาพ 1">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">หัวข้อการ์ด 1</h5>
+                                                    <h5 class="card-title">วัดพระธาตุแม่เย็น</h5>
                                                     <p class="card-text">รายละเอียดสำหรับการ์ดที่ 1</p>
-                                                    <a href="#" class="btn btn-primary">ดูเพิ่มเติม</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="templeall">
-                                                <img src="/img/เหนือ.webp" class="card-img-top imagewatthai2" id="imagewatthai" alt="รูปภาพ 1">
-                                                <div class="card-body">
-                                                    <h5 class="card-title">หัวข้อการ์ด 1</h5>
-                                                    <p class="card-text">รายละเอียดสำหรับการ์ดที่ 1</p>
-                                                    <a href="#" class="btn btn-primary">ดูเพิ่มเติม</a>
+                                                    <h6 class="card-text">ที่ตั้ง :ตำบลแม่ฮี้ อำเภอปาย จังหวัดแม่ฮ่องสอน </h6>
+                                                    <a href="#" class="btn btn-primary btn-sm">ดูเพิ่มเติม</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -198,11 +192,45 @@
                                     <div class="row">
                                         <div class="col-md-3">
                                             <div class="templeall">
-                                                <img src="/img/เหนือ.webp" class="card-img-top imagewatthai2" id="imagewatthai" alt="รูปภาพ 2">
+                                                <img src="/img/wat5.jpg" class="card-img-top imagewatthai2" id="imagewatthai" alt="รูปภาพ 2">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">หัวข้อการ์ด 2</h5>
+                                                    <h5 class="card-title">วัดพระธาตุดอยตุง</h5>
                                                     <p class="card-text">รายละเอียดสำหรับการ์ดที่ 2</p>
-                                                    <a href="#" class="btn btn-primary">ดูเพิ่มเติม</a>
+                                                    <h6 class="card-text">ที่ตั้ง :ตำบลห้วยไคร้ อำเภอแม่สาย จังหวัดเชียงราย </h6>
+                                                    <a href="#" class="btn btn-primary btn-sm">ดูเพิ่มเติม</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="templeall">
+                                                <img src="/img/wat6.jpg" class="card-img-top imagewatthai2" id="imagewatthai" alt="รูปภาพ 2">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">วัดพระธาตุดอยสะเก็ด</h5>
+                                                    <p class="card-text">รายละเอียดสำหรับการ์ดที่ 2</p>
+                                                    <h6 class="card-text">ที่ตั้ง :ตำบลเชิงดอย อำเภอดอยสะเก็ด จังหวัดเชียงใหม่ </h6>
+                                                    <a href="#" class="btn btn-primary btn-sm">ดูเพิ่มเติม</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="templeall">
+                                                <img src="/img/wat7.jpg" class="card-img-top imagewatthai2" id="imagewatthai" alt="รูปภาพ 2">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">วัดพระธาตุดอยสุเทพ</h5>
+                                                    <p class="card-text">รายละเอียดสำหรับการ์ดที่ 2</p>
+                                                    <h6 class="card-text">ที่ตั้ง :ต.บลสุเทพ อ.เมืองเชียงใหม่ จ.เชียงใหม่ </h6>
+                                                    <a href="#" class="btn btn-primary btn-sm">ดูเพิ่มเติม</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="templeall">
+                                                <img src="/img/wat8.webp" class="card-img-top imagewatthai2" id="imagewatthai" alt="รูปภาพ 2">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">วัดร่องขุ่น</h5>
+                                                    <p class="card-text">รายละเอียดสำหรับการ์ดที่ 2</p>
+                                                    <h6 class="card-text">ที่ตั้ง :อำเภอเมืองเชียงราย จังหวัดเชียงราย</h6>
+                                                    <a href="#" class="btn btn-primary btn-sm">ดูเพิ่มเติม</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -222,29 +250,35 @@
                 </div>
             </div>
         </div>   
-    </body>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // สร้าง carousel instance
-        const carouselElement = document.getElementById('templeCarousel');
-        const carousel = new bootstrap.Carousel(carouselElement, {
-            interval: 3000,
-            ride: false // เริ่มต้นไม่ให้ auto play
-        });
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const carouselElement = document.querySelector('#templeCarousel');
+            const autoPlayBtn = document.querySelector('#autoPlayBtn');
+            
+            const carousel = new bootstrap.Carousel(carouselElement, {
+                interval: 3000,
+                ride: false
+            });
 
-        let isPlaying = false;
+            let isPlaying = false;
 
-        window.toggleAutoPlay = function() {
-            if (!isPlaying) {
-                // เริ่ม Auto Play
-                carousel.cycle();
-                isPlaying = true;
-            } else {
-                // หยุด Auto Play
-                carousel.pause();
-                isPlaying = false;
+            window.toggleAutoPlay = function() {
+                if (!isPlaying) {
+                    carousel.cycle();
+                    isPlaying = true;
+                    autoPlayBtn.textContent = 'ปิด Auto Play';
+                    autoPlayBtn.classList.remove('btn-primary');
+                    autoPlayBtn.classList.add('btn-danger');
+                } else {
+                    carousel.pause();
+                    isPlaying = false;
+                    autoPlayBtn.textContent = 'เปิด Auto Play';
+                    autoPlayBtn.classList.remove('btn-danger');
+                    autoPlayBtn.classList.add('btn-primary');
+                }
             }
-        }
-    });
-    </script>
+        });
+        </script>
+    </body>
 </html>

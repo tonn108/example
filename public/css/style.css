@@ -1,18 +1,31 @@
 #temple {
-    height: 100vh;
-    background-image: url('/img/เหนือ.webp');
+    height: 120vh;
+    background-image: url('/img/header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
 }
 #temple h1 {
-    
     font-size: 50px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     text-align: center;
-    color: red;
-    
+    color: white;
+    -webkit-text-stroke: 2px black;
+    text-stroke: 2px black;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+}
+#temple h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: -1;
 }
 .templeall {
     color: black;
@@ -27,6 +40,12 @@
     transform: translate(-50%, -50%); 
     color: white;       
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);  
+}
+.templeall h5 {
+    font-size: 15px;
+}
+.templeall h6 {
+    font-size: 12px;
 }
 .card-body {
     background-color: white;
