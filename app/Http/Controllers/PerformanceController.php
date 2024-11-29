@@ -66,4 +66,66 @@ class PerformanceController extends Controller
         $performance->delete();
         return redirect()->route('performance.index')->with('success', 'ลบข้อมูลสำเร็จ');
     }
+
+    public function reportDay(Request $request)
+    {
+        // สร้าง query base
+        $date = $request->report_date ?? today();
+        
+        // ดึงข้อมูลทั้งหมดของวันที่เลือกมาก่อน
+        $performances = Performance::whereDate('created_at', $date)->get();
+        
+        // นับจำนวนทั้งหมด
+        $totalTasks = $performances->count();
+        
+        // นับตามสถานะ
+        $completedTasks = $performances->where('status', 'เสร็จสิ้น')->count();
+        $inProgressTasks = $performances->where('status', 'กำลังดำเนินการ')->count();
+        $cancelledTasks = $performances->where('status', 'ยกเลิก')->count();
+        
+        // นับตามประเภทงาน
+        $devTasks = $performances->where('task_type', 'Development')->count();
+        $testTasks = $performances->where('task_type', 'Test')->count();
+        $docTasks = $performances->where('task_type', 'Document')->count();
+
+        return view('performance.report-day', compact(
+            'totalTasks',
+            'completedTasks',
+            'inProgressTasks',
+            'cancelledTasks',
+            'devTasks',
+            'testTasks',
+            'docTasks'
+        ));
+    }
+
+    public function reportMonth(Request $request)
+    {
+        $month = $request->report_month ?? now()->format('Y-m');
+        
+        $performances = Performance::whereYear('created_at', substr($month, 0, 4))
+                                   ->whereMonth('created_at', substr($month, 5, 2))
+                                   ->get();
+        
+        // สถานะงาน
+        $totalTasks = $performances->count();
+        $completedTasks = $performances->where('status', 'เสร็จสิ้น')->count();
+        $inProgressTasks = $performances->where('status', 'กำลังดำเนินการ')->count();
+        $cancelledTasks = $performances->where('status', 'ยกเลิก')->count();
+        
+        // ประเภทงาน
+        $devTasks = $performances->where('task_type', 'Development')->count();
+        $testTasks = $performances->where('task_type', 'Test')->count();
+        $docTasks = $performances->where('task_type', 'Document')->count();
+
+        return view('performance.report-month', compact(
+            'totalTasks',
+            'completedTasks',
+            'inProgressTasks',
+            'cancelledTasks',
+            'devTasks',
+            'testTasks',
+            'docTasks'
+        ));
+    }
 } 

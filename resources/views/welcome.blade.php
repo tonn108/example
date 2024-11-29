@@ -79,6 +79,8 @@
                                     </div>
                                 </form>
                             </div>
+                            <a href="{{ route('performance.report_day') }}" class="btn btn-primary">รายงานผลการปฎิบัติงานประจำวัน</a>
+                            <a href="{{ route('performance.report_month') }}" class="btn btn-primary">รายงานผลการปฎิบัติงานประจำเดือน</a>
                         </div>
                     </div>
                     
@@ -229,7 +231,7 @@
                                                 <div class="card-body">
                                                     <h5 class="card-title">วัดร่องขุ่น</h5>
                                                     <p class="card-text">รายละเอียดสำหรับการ์ดที่ 2</p>
-                                                    <h6 class="card-text">ที่ตั้ง :อำเภอเมืองเชียงราย จังหวัดเชียงราย</h6>
+                                                    <h6 class="card-text">ที่ตั้ง :อำเภอเมื��งเชียงราย จังหวัดเชียงราย</h6>
                                                     <a href="#" class="btn btn-primary btn-sm">ดูเพิ่มเติม</a>
                                                 </div>
                                             </div>
